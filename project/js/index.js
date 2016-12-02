@@ -157,4 +157,115 @@ $(function(){
 			top:0
 		},100)
 	});
+	//导航特效
+	$('.sports').hover(function(){
+		$('.navsub').show()
+	},function(){
+		$('.navsub').hide()
+	});
+	$('.outdoor').hover(function(){
+		$('.navsub2').show()
+	},function(){
+		$('.navsub2').hide()
+	});
+	$('.shoes').hover(function(){
+		$('.navsub3').show()
+	},function(){
+		$('.navsub3').hide()
+	});
+	$('.child').hover(function(){
+		$('.navsub4').show()
+	},function(){
+		$('.navsub4').hide()
+	});
+	$('.global').hover(function(){
+		$('.navsub5').show()
+	},function(){
+		$('.navsub5').hide()
+	});
+	//list选中加边框
+	$('#list').find('a').hover(function(){
+		$(this).css({
+			borderColor:'#c33'
+		})
+	},function(){
+		$(this).css({
+			borderColor:'#e7e7e7'
+		})
+	});
+	$('#list2').find('a').hover(function(){
+		$(this).css({
+			borderColor:'#c33'
+		})
+	},function(){
+		$(this).css({
+			borderColor:'#e7e7e7'
+		})
+	});
+	//倒计时
+	function countDown(time){
+		//创建一个未来时间的时间戳
+		var futureTime = Date.parse(time);
+		showTime();
+		
+		setInterval(showTime,200);	
+		function showTime(){
+			//获取当前时间的时间戳
+			var nowTime = Date.now();
+			//距离未来的时间
+			var diff = futureTime - nowTime;
+			//天
+			$('.day').find('i').html( parseInt( diff/1000/60/60/24) );
+			//小时
+			$('.hour').find('i').html( parseInt( diff/1000/60/60%24) );
+			//分钟
+			$('.minute').find('i').html( parseInt( diff/1000/60%60) );
+			//秒
+			$('.second').find('i').html( parseInt( diff/1000%60) );
+			//毫秒
+			$('.fsecond').find('i').html( parseInt((futureTime - nowTime)/100%10) );
+		}
+	}	
+	countDown('2016/12/5 12:00:00');
+	
+	function countDown2(time){
+		//创建一个未来时间的时间戳
+		var futureTime2 = Date.parse(time);
+		showTime2();
+		
+		setInterval(showTime2,200);	
+		function showTime2(){
+			//获取当前时间的时间戳
+			var nowTime2 = Date.now();
+			//距离未来的时间
+			var diff2 = futureTime2 - nowTime2;
+			//天
+			$('.day1').find('i').html( parseInt( diff2/1000/60/60/24) );
+			//小时
+			$('.hour1').find('i').html( parseInt( diff2/1000/60/60%24) );
+			//分钟
+			$('.minute1').find('i').html( parseInt( diff2/1000/60%60) );
+			//秒
+			$('.second1').find('i').html( parseInt( diff2/1000%60) );
+			//毫秒
+			$('.fsecond1').find('i').html( parseInt((futureTime2 - nowTime2)/100%10) );
+		}
+	}	
+	countDown2('2016/12/7 12:00:00');
+	
+	//回到顶部
+	$(window).scroll(function(){
+		var t = $('body').scrollTop();
+		if(t>=1000){
+			$('#gotop').fadeIn()
+		}else{
+			$('#gotop').fadeOut()
+		}
+		
+	});
+	$('#gotop').click(function(){
+		$('body').scrollTop(0)
+	})
+		
+
 })
