@@ -255,8 +255,8 @@ $(function() {
 	});
 	//滤镜和大图移动
 	$('.wrap').mousemove(function(e) {
-		var l = e.clientX - 20;
-		var t = e.clientY + 40;
+		var l = e.pageX-20;
+		var t = e.pageY-150;
 		//处理left和top，做边缘处理（防止越界）
 		l = l < 200 ? 200 : (l > 450) ? 450 : l;
 		t = t < 200 ? 200 : (t > 450) ? 450 : t;
@@ -269,19 +269,20 @@ $(function() {
 			top: -2 * (t - 200)
 		})
 	});
-	//小图切换
-	$('.othimg li').hover(function() {
-		$(this).find('.othBor').addClass('hover');
-		$(this).siblings().find('.othBor').removeClass('hover');
-		var src = $(this).find('img').attr('src');
-		$('.pDetail .wrap img').attr('src', src)
-	});
+	
 
 	//商品颜色类型切换
 	$('.colorImg a').click(function() {
 		$(this).addClass('hover');
 		$(this).siblings().removeClass('hover');
 		$('.pDetail .wrap img').attr('src', $(this).find('img').attr('src'));
+		$('.bigImg').attr('src', $(this).find('img').attr('src'));
+	});
+	//小图切换
+	$('.othimg li').hover(function() {
+		$(this).find('.othBor').addClass('hover');
+		$(this).siblings().find('.othBor').removeClass('hover');
+		$('.pDetail .wrap img').attr('src',$(this).find('img').attr('src'));
 		$('.bigImg').attr('src', $(this).find('img').attr('src'));
 	});
 

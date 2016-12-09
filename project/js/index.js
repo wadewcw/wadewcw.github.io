@@ -265,19 +265,4 @@ $(function() {
 		}
 	}
 	countDown2('2016/12/15 12:00:00');
-
-	//回到顶部
-	$(window).scroll(function() {
-		var t = $('body').scrollTop();
-		if (t >= 1000) {
-			$('#gotop').fadeIn()
-		} else {
-			$('#gotop').fadeOut()
-		}
-
-	});
-	$('#gotop').click(function() {
-		$('body').scrollTop(0)
-	})
-
 })
