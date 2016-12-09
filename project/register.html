@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/register.css"/>
+	</head>
+	<body>
+		<div id="minihead">
+			<a href="index.html" class="login"><img src="img/miniheaderlogo.png"/></a>
+			<div class="head-right r">
+				<a href="login.html">登录</a>
+				<i>|</i>
+				<a href="register.html">注册</a>
+				<i>|</i>
+				<a href="#">我的账户</a>
+				<a href="#" class="help">帮助</a>
+			</div>
+		</div>
+		<div id="reg">
+			<a href="#" class="regimg l"><img src="img/qq.jpg"/></a>
+			<div class="reginfo r">
+				<div class="mobileoremail">
+					<div class="regtit">手机号：</div>
+					<div class="mobilediv">
+						<input type="text" class="mobile-val" placeholder="请输入正确的11位手机号码"/>
+						<span class="deletemobile"></span>
+					</div>
+					<div class="true">
+						<img src="img/right.png"/>
+					</div>
+				</div>
+				<div class="regerror mobile-err"><b>请输入正确的11位手机号码</b></div>
+				<div class="password">					
+					<div class="regtit">密&ensp;&ensp;码：</div>
+					<div class="pswdiv">
+						<input type="password" class="psw-val" placeholder="请输入密码"/>
+						<span class="deletepsw"></span>
+					</div>
+					<div class="safe">
+						<p>安全程度：</p>
+						<div class="safeline">
+							<span id="lev1" class>低</span>
+							<span id="lev2" class>中</span>
+							<span id="lev3" class>高</span>
+						</div>
+					</div>					
+					<div class="true">
+						<img src="img/right.png"/>
+					</div>
+				</div>
+				<div class="regerror psw-err"><b class="errinfo"></b></div>
+				<div class="code">
+					<div class="regtit">验证码：</div>
+					<div class="codediv">
+						<input type="text" placeholder="请输入验证码"/>
+						<span class="codenum"></span>
+						<span class="getcode">换一张</span>
+					</div>
+					<div class="true">
+						<img src="img/right.png"/>
+					</div>
+				</div>
+				<div class="regerror code-err"><b>请输入验证码！</b></div>
+				<p class="check">注册即视为同意<a href="#">《好乐买隐私协议》</a></p>
+				<p class="btn">
+					<input type="button" value="注册" />
+				</p>
+			</div>
+		</div>
+		<div id="minifoot">
+			<p>Copyright © 2007-2016 OkBuy.com All Rights Reserved           天津好乐买信息技术有限公司  津B2-20140020  京公网安备 110105006859</p>
+		</div>
+		<script type="text/javascript" src="js/jquery.1.11.3.min.js" ></script>
+		<script type="text/javascript" src="js/register.js" ></script>
+	</body>
+</html>

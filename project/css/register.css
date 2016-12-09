@@ -1,0 +1,254 @@
+@charset "utf-8";
+#minihead{
+	width: 990px;
+	border-bottom: 2px solid #dc5751;
+	height: 65px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+#minihead .logo{
+	float: left;
+}
+#minihead .head-right{
+	margin: 30px 10px 0 0;
+}
+#minihead .head-right a{
+	color: #666;
+	font-family: "微软雅黑";
+}
+#minihead .head-right a:hover{
+	color: #c33;
+}
+#minihead .head-right i{
+	color: #666;
+	margin: 0 5px;
+}
+#minihead .head-right .help{
+	margin-left: 10px;
+}
+#reg{
+	width: 990px;
+	height: 588px;
+	margin: 0 auto;
+}
+#reg .regimg{
+	float: left;
+}
+#reg .mobileoremail{
+	width: 410px;
+	height: 40px;
+	margin-top: 68px;
+}
+#reg .mobileoremail .true{
+	float: left;
+	margin: 3px 0 0 8px;
+	display: none;
+}
+#reg .regtit{
+	float: left;
+	line-height: 38px;
+	font-family: "simsun";
+	font-size: 14px;
+	color: #636363;
+}
+#reg .mobilediv,
+#reg .pswdiv{
+	border: 1px solid #ddd;
+	width: 258px;
+	height: 38px;
+	border-radius: 4px;
+	padding: 0;
+	float: left;
+	position: relative;
+}
+#reg .mobilediv.focus,
+#reg .pswdiv.focus,
+#reg .codediv.focus{
+	border-color: #4791ff;
+}
+#reg .mobilediv.red,
+#reg .pswdiv.red,
+#reg .codediv.red{
+	border-color: #d70057;
+}
+#reg .mobilediv input,
+#reg .pswdiv input{
+	width: 250px;
+	height: 30px;
+	padding-left: 5px;
+	font-size: 12px;
+	line-height: 30px;
+	margin: 2px;
+	border: 0;
+}
+#reg .mobilediv .deletemobile{
+	display: block;
+	background: url(../img/delete.png) no-repeat;
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	cursor: pointer;
+}
+#reg .regerror{
+	height: 30px;
+	line-height: 24px;
+	color: #dc5751;
+	padding-left: 56px;
+	font-size: 12px;
+}
+#reg .psw-err b{
+	color: #666;
+}
+#reg .regerror b{
+	display: none;
+}
+#reg .password {
+	width: 455px;
+	height: 40px;
+	position: relative;
+}
+#reg .password .true{
+	position: absolute;
+	left: 330px;
+	top: 2px;
+	display: none;
+}
+#reg .password .safe{
+	float: left;
+	height: 40px;
+	margin: 5px 0 0 10px;
+}
+#reg .password .safe p{
+	line-height: 12px;
+	font-size: 12px;
+	margin-bottom: 6px;
+	color: #949494;
+}
+#reg .password .safe .safeline span.safered{
+	background: #ff9b00;
+}
+#reg .password .safe .safeline span{
+	float: left;
+	width: 40px;
+	height: 14px;
+	display: block;
+	background: #d4d4d4;
+	color: #fff;
+	font-size: 12px;
+	margin-right: 2px;
+	text-align: center;
+}{
+	
+}
+#reg .pswdiv .deletepsw{
+	display: block;
+	background: url(../img/pwicon1.png) no-repeat;
+	width: 20px;
+	height: 38px;
+	position: absolute;
+	right: 10px;
+	top: 0px;
+	cursor: pointer;
+}
+#reg .pswdiv .deletepsw.hide{
+	background: url(../img/pwicon2.png) no-repeat;
+}
+#reg .code{
+	width: 380px;
+	height: 40px;
+	position: relative;	
+}
+#reg .code .codediv{
+	float: left;
+}
+#reg .code .true{
+	position: absolute;
+	left: 300px;
+	top: 3px;
+	display: none;
+}
+#reg .codediv{
+	border: 1px solid #ddd;
+	width: 122px;
+	height: 38px;
+	border-radius: 4px;
+	padding: 0;
+	float: left;
+	position: relative;
+}
+#reg .codediv input{
+	width: 110px;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 4px;
+	border: 0;
+	margin: 2px;
+	
+}
+#reg .code .codediv .codenum{
+	position: absolute;
+	display: block;
+	width: 70px;
+	height: 34px;
+	line-height: 34px;
+	font-size: 24px;
+	left: 120px;
+	top: 0;
+	text-align: center;	
+}
+#reg .code .codediv .getcode{
+	position: absolute;
+	display: block;
+	width: 60px;
+	height: 34px;
+	line-height: 34px;
+	font-size: 14px;
+	left: 180px;
+	top: 0;
+	text-align: center;
+	color: #c33;
+	text-decoration: underline;
+}
+#reg .check{
+	margin-top: 15px;
+	color: #666;
+	height: 24px;
+	line-height: 24px;
+	padding-left: 55px;
+	font-size: 15px;
+}
+#reg .check a{
+	color: #c33;
+}
+#reg .btn{
+	margin: 8px 0 5px 5px;
+	padding-left: 48px;
+}
+#reg .btn input{
+	cursor: pointer;
+	width: 260px;
+	height: 44px;
+	line-height: 44px;
+	background: #d70057;
+	color: #fff;
+	text-align: center;
+	border: 0;
+	border-radius: 4px;
+	font-size: 24px;
+	font-family: "microsoft yahei";
+}
+#reg .btn input:hover{
+	background: #df3379;
+}
+#minifoot{
+	width: 990px;
+	height: 28px;
+	line-height: 28px;
+	text-align: center;
+	background: #f2f2f2;
+	color: #999;
+	font-size: 12px;
+	margin: 0 auto;
+}

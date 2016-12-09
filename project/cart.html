@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8" />
+		<title>Document</title>
+		<link rel="stylesheet" type="text/css" href="css/cart.css" />
+		<link rel="stylesheet" type="text/css" href="css/public.css" />
+		<link rel="stylesheet" href="css/footer.css" />
+		<link rel="stylesheet" href="css/head.css" />
+		<link rel="stylesheet" href="css/nav.css" />
+	</head>
+
+	<body>
+		<div id="head"></div>
+		<div id="head2"></div>
+		<div id="nav2"></div>
+		<div class="mycart">
+			<div class="wrap">
+				<div class="cartit">
+					<h1>我的购物车</h1>
+				</div>
+				<div class="cartlist">
+					<table>
+						<thead>
+							<tr>
+								<th width="110" class="td td-checkbox">
+									<input type="checkbox" class="select-all-btn"/>
+									<span class="all">全选</span>
+								</th>
+								<th width="470">商品名称</th>
+								<th width="110">单价</th>
+								<th width="240">数量</th>
+								<th width="110">小计</th>
+								<th width="160">操作</th>
+							</tr>
+						</thead>
+					</table>
+				</div>
+				<!--商品区-->
+				<div class="listin">
+
+				</div>
+				<!--操作区-->
+				<div class="cart-option clearfix">
+					<div class="options clearfix">
+						<div class="options-item select-all">
+							<input type="checkbox" class="select-all-btn">
+							<span>全选</span>
+						</div>
+						<div class="options-item delete">
+							<a href="#">删除所选商品</a>
+						</div>
+					</div>
+					<div class="cart-info clearfix">
+						<div class="info-item goods-amount">
+							商品数量:<span class="user-goods-amount">¥0</span>
+							活动优惠:<span>¥0</span>
+						</div>
+						<div class="info-item goods-money">
+							合计：不含运费<span class="user-goods-money">¥0.00</span>
+						</div>
+						<div class="info-item go-pay">去结算</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="foot"></div>
+		<script type="text/javascript" src="js/jquery.1.11.3.min.js"></script>
+		<script type="text/javascript" src="js/jquery.cookie.js"></script>
+		<script type="text/javascript" src="js/cart.js"></script>
+	</body>
+
+</html>

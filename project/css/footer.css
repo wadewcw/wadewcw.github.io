@@ -1,0 +1,86 @@
+#foot{
+	border-top: 1px solid #a6a6a6;
+	background: #e6e6e6;
+	padding-top: 28px;
+	height: 240px;
+	width: 100%;
+}
+#foot .qd{
+	float: left;
+	display: inline;
+	width: 680px;
+	height: 99px;
+	background: url(../img/qd.png) no-repeat;
+	padding-top: 10px;
+	position: relative;
+}
+#foot .qd .qd1{
+	width: 160px;
+	position: absolute;
+	left: 101px;
+}
+#foot .qd p{
+	color: #999999;
+	margin-bottom: 5px;
+	line-height: 1.6;
+}
+#foot .qd p b{
+	font-family: "微软雅黑";
+	color: #333;
+	font-size: 14px;
+}
+#foot .qd .qd2{
+	width: 130px;
+	position: absolute;
+	left: 376px;
+}
+#foot .qd .cons{
+	position: absolute;
+	left: 530px;
+	top: 20px;
+}
+#foot ul li{
+	float: left;
+	width: 120px;
+	display: inline;
+	border-left: 1px solid #fff;
+	margin-right: 20px;
+}
+#foot .conn{
+	width: 1250px;
+	height: 110px;
+}
+#foot .conn li p{
+	line-height: 24px;
+	padding-left: 20px;
+}
+#foot .conn li .tit{
+	line-height: 24px;
+	background: #fff;
+	margin-bottom: 14px;
+	font-family: "微软雅黑";
+	font-size: 14px;
+	color: #999;
+}
+#foot .conn li a{
+	color: #666;
+	text-shadow: 0 1px #f5f5f5;
+}
+#foot .f-logo{
+	padding-top: 45px;
+	text-align: center;
+}
+#foot .about{
+	text-align: center;
+	line-height: 42px;
+	color: #d7d7d7;
+}
+#foot .about a{
+	color: #777;
+}
+#foot .bt{
+	height: 24px;
+	text-align: center;
+	background: #000000;
+	color: #999;
+}
