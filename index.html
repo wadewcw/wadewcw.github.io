@@ -1,21 +1,56 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<style>
-		a{
-			text-decoration: none;
-			color:#f99;
+		*{
+			padding: 0;
+			margin:0;
+		}
+		#box{
+			-webkit-transform-style: preserve-3d;
+			-webkit-transform: rotateX(30deg) rotateY(0deg);
+			width: 210px;
+			position: relative;
+			left:400px;
+			top:200px;
+			height: 140px;
+			-webkit-animation:move 10s linear alternate infinite ;	
+		}
+		@-webkit-keyframes move{
+			from{transform: rotateX(30deg) rotateY(0deg);}
+			to{transform: rotateX(30deg) rotateY(360deg);}
+		}
+		.item{
+			width: 210px;
+			height: 140px;
+			line-height: 140px;
+			text-align: center;
+			color: #fff;
+			position: absolute;
+			font-size: 20px;
+		}
+		.item img{
+			width: 210px;
+			height: 140px;
 		}
 	</style>
 </head>
-<body>
-	<h1>猴赛雷</h1>
-	<a href="http://wadewcw.github.io/mirror">放大镜</a>
-	<div>
-		<a href="http://wadewcw.github.io/project">好乐买</a>
+<body>	
+	<div id="box">
+		<div class="item item1" style="transform: rotateY(0deg) translateZ(288px);"><img src="1.jpg"></div>
+		<div class="item item2" style="transform: rotateY(40deg) translateZ(288px);"><img src="2.jpg"></div>
+		<div class="item item3" style="transform: rotateY(80deg) translateZ(288px);"><img src="3.jpg"></div>
+		<div class="item item4" style="transform: rotateY(120deg) translateZ(288px);"><img src="4.jpg"></div>
+		<div class="item item5" style="transform: rotateY(160deg) translateZ(288px);"><img src="5.jpg"></div>
+		<div class="item item6" style="transform: rotateY(200deg) translateZ(288px);"><img src="6.jpg"></div>
+		<div class="item item7" style="transform: rotateY(240deg) translateZ(288px);"><img src="7.jpg"></div>
+		<div class="item item8" style="transform: rotateY(280deg) translateZ(288px);"><img src="8.jpg"></div>
+		<div class="item item9" style="transform: rotateY(320deg) translateZ(288px);"><img src="9.jpg"></div>
 	</div>
-	
+	<script type="text/javascript">
+		
+	</script>
 </body>
 </html>
