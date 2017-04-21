@@ -56,11 +56,11 @@ select{padding:2px;}
 input[type="text"],
 input[type="password"],
 select{
-    background: #fff;
+    
     outline: none;
     -webkit-tap-highlight-color: transparent; 
     -webkit-user-select: none;
-    -moz-user-focus: none;
+   
     -moz-user-select: none;
     -webkit-appearance:none;
 }
