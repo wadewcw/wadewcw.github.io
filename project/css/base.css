@@ -12,18 +12,12 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,legend,input,text
 body,button,input,select,textarea { 
     font:12px SimSun,tahoma,arial,sans-serif; 
 } 
-/*input,select,textarea { 
-    font-size:100%; 
-}*/
  
 /* 去除默认边框 */ 
 fieldset,img { 
     border:none; 
 } 
-/* 来自yahoo, 让标题都自定义, 适应多个系统应用 */ 
-h1,h2,h3,h4,h5,h6 { 
-    font-size:100%; 
-}
+
 h2{
     font-size: 16px;
 }
@@ -46,22 +40,15 @@ span{
     display: inline-block;
 }
 /* IE6,7焦点点状线去除 */ 
-a:focus,*:focus { 
+a:focus{ 
     outline:none; 
 }
 
-/*解决select的浏览器兼容性。*/
-select{padding:2px;}
 /*解决设置windows窗口背景色后输入框和文本域变色的问题。*/
 input[type="text"],
-input[type="password"],
-select{
-    
+input[type="password"]{
     outline: none;
     -webkit-tap-highlight-color: transparent; 
-    -webkit-user-select: none;
-   
-    -moz-user-select: none;
     -webkit-appearance:none;
 }
 textarea{
