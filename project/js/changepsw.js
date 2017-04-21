@@ -17,7 +17,8 @@ $oldTxt.one('focus',function () {
 var $newTxt = $('.new_txt');
 var $newTit = $('.new_title');
 var $newInfo = $('.new_info');
-$newTxt.one('focus',function () {
+$newInfo.one('click',function () {
+    $newTxt.get(0).focus();
     $newInfo.show().animate({
         top:'0.5px'
     }).fadeOut('fast');
