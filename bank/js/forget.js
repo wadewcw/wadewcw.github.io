@@ -19,10 +19,11 @@ var $code = $('.code');
 var $codeTit = $('.code_title');
 var $codePla = $('.code_place');
 var $codeTxt = $('.code_txt');
-$code.click(function(){
+var $codeLeft = $('.left');
+$codeLeft.click(function(){
 	$codeTxt.get(0).focus();
 });
-$code.one('click',function () {
+$codeLeft.one('click',function () {
     $codeTxt.get(0).focus();
     $codePla.show().animate({
         top:'0.1rem'

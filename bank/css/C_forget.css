@@ -93,12 +93,19 @@
     right:0.04rem;
     top: 0.1rem;
 }
+.left{
+    float: left;
+    height: 0.98rem;
+    width: 2rem;
+}
+
 .getcode{
-    position: absolute;
+    -position: absolute;
     right: 1.2rem;
     top: 2.84rem;
     width: 1.73rem;
     height: 0.72rem;
+    float: right;
 }
 .code_img{
     width: 1.73rem;
