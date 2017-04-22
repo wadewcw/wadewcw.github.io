@@ -8,13 +8,7 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,legend,input,text
     margin:0; 
     padding:0; 
 } 
-/* 要注意表单元素并不继承父级 font 的问题 */ 
-body,button,input,select,textarea { 
-    font:12px SimSun,tahoma,arial,sans-serif; 
-} 
-/*input,select,textarea { 
-    font-size:100%; 
-}*/
+
  
 /* 去除默认边框 */ 
 fieldset,img { 
@@ -45,10 +39,7 @@ a{
 span{
     display: inline-block;
 }
-/* IE6,7焦点点状线去除 */ 
-a:focus,*:focus { 
-    outline:none; 
-}
+
 
 /* select{padding:2px;}
 解决设置windows窗口背景色后输入框和文本域变色的问题。
