@@ -31,8 +31,8 @@ html, body {
     .container .account .account_txt {
       z-index: 999;
       width: 100%;
-      line-height: 0.16rem;
-      height: 0.16rem;
+    line-height: 0.24rem;
+    height: 0.24rem;
       border: none;
       /* height: 0.78rem; */
       /*border: none;
@@ -62,8 +62,9 @@ html, body {
     .container .password .account_psw {
       width: 100%;
       z-index: 999;
-      line-height: 0.22rem;
-      height: 0.22rem;
+      
+    line-height: 0.24rem;
+    height: 0.24rem;
       border: none;
       font-size: 0.24rem;
       z-index: 999;
