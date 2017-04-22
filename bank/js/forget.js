@@ -3,10 +3,10 @@ var $phone  =$('.phone');
 var $phoneTit = $('.phone_title');
 var $phonePla = $('.phone_place');
 var $phoneTxt = $('.phone_txt');
-$phone.click(function(){
+$phone.touchstart(function(){
 	$phoneTxt.get(0).focus();
 });
-$phone.one('click',function () {
+$phone.one('touchstart',function () {
     $phoneTxt.get(0).focus();
     $phonePla.show().animate({
         top:'0.1rem'
@@ -19,10 +19,10 @@ var $code = $('.code');
 var $codeTit = $('.code_title');
 var $codePla = $('.code_place');
 var $codeTxt = $('.code_txt');
-$code.click(function(){
+$code.touchstart(function(){
 	$codeTxt.get(0).focus();
 });
-$code.one('click',function () {
+$code.one('touchstart',function () {
     $codeTxt.get(0).focus();
     $codePla.show().animate({
         top:'0.1rem'
@@ -34,10 +34,10 @@ var $password = $('.password');
 var $passTit = $('.password_title');
 var $passPla = $('.password_place');
 var $passTxt = $('.password_txt');
-$password.click(function(){
+$password.touchstart(function(){
 	$passTxt.get(0).focus();
 });
-$password.one('click',function () {
+$password.one('touchstart',function () {
     $passTxt.get(0).focus();
     $passPla.show().animate({
         top:'0.1rem'
@@ -52,10 +52,10 @@ var $pswTxt = $('.again_txt');
 var $login = $('.login');
 var $img = $('.back');
 var $codeImg =$('.code_img');
-$pswAgain.click(function(){
+$pswAgain.touchstart(function(){
 	$pswTxt.get(0).focus();
 });
-$pswAgain.one('click',function () {
+$pswAgain.one('touchstart',function () {
     $pswTxt.get(0).focus();
     $pswPla.show().animate({
         top:'0.1rem'
@@ -66,7 +66,7 @@ $pswAgain.one('click',function () {
 $phone.bind('input propertychange',function (){
 	if($phoneTxt.val().length == 11){
 		$codeImg.attr('src','../img/code.png');
-		$('.getcode').click(function(){
+		$('.getcode').touchstart(function(){
 			$codeImg.attr('src','../img/codedown.png');	
 		})	
 	}

@@ -7,10 +7,10 @@ var $oldTxt = $('.old_txt');
 var $oldTit = $('.old_title');
 var $oldInfo = $('.old_info');
 
-$oldPsw.click(function(){
+$oldPsw.touchstart(function(){
     $oldTxt.get(0).focus();
 });
-$oldPsw.one('click',function () {
+$oldPsw.one('touchstart',function () {
     $oldTxt.get(0).focus();
     $oldInfo.show().animate({
         top:'0.1rem'
@@ -23,10 +23,10 @@ var $newPsw = $('.new_psw');
 var $newTxt = $('.new_txt');
 var $newTit = $('.new_title');
 var $newInfo = $('.new_info');
-$newPsw.click(function(){
+$newPsw.touchstart(function(){
     $newTxt.get(0).focus();
 });
-$newPsw.one('click',function () {
+$newPsw.one('touchstart',function () {
     $newTxt.get(0).focus();
     $newInfo.show().animate({
         top:'0.1rem'
@@ -39,10 +39,10 @@ var $newAgain = $('.new_again');
 var $againTxt = $('.again_txt');
 var $againTit = $('.again_title');
 var $againInfo = $('.again_info');
-$newAgain.click(function(){
+$newAgain.touchstart(function(){
     $againTxt.get(0).focus();
 });
-$newAgain.one('click',function () {
+$newAgain.one('touchstart',function () {
     $againTxt.get(0).focus();
     $againInfo.show().animate({
         top:'0.1rem'
@@ -55,18 +55,18 @@ var $close = $('.close');
 var $oldWrong = $('.old_wrong');
 var $btn = $('.login');
 var $img = $('.back');
-$btn.click(function () {
+$btn.touchstart(function () {
     //原密码校验
     if($oldTxt.val().length>7){
         $oldTxt.val('');
         $close.fadeIn();
         $oldWrong.fadeIn();
     }
-    $close.click(function () {
+    $close.touchstart(function () {
         $close.fadeOut();
         $oldWrong.fadeOut();
     })
-    
+    $img.attr('src','../img/click.png');
 })
 
 $newAgain.bind('input propertychange',function () {

@@ -25,20 +25,20 @@ var $titlePsw = $('.title_psw');
 var $img = $('.back');
 var $btn = $('.login');
 
-$account.click(function () {
+$account.touchstart(function () {
     $accountTxt.get(0).focus();
 });
-$account.one('click',function () {
+$account.one('touchstart',function () {
     $accountTxt.get(0).focus();
     $infoId.show().animate({
         top:'0.1rem'
     }).fadeOut();
     $titleId.fadeIn(1500);
 });
-$accountPsw.click(function () {
+$accountPsw.touchstart(function () {
     $accountPsw.get(0).focus();
 });
-$accountPsw.one('click',function () {
+$accountPsw.one('touchstart',function () {
     $infoPsw.show().animate({
         top:'0.1rem'
     }).fadeOut();
@@ -54,7 +54,7 @@ $accountPsw.bind('input propertychange',function () {
     }
 });
 
-$btn.click(function () {
+$btn.touchstart(function () {
     $img.attr('src','../img/click.png');
 })
 
