@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>联币银行</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="../css/Cmoney.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <script src="../js/rem.js"></script>
+</head>
+<body>
+    <div class="nav">
+        <div class="nav-content">
+            <img src="../img/findpwd.png" class="findpwd">
+            <p class="money">100</p>
+            <p class="howtoAchieve">如何获取联币</p>   
+        </div>
+        <ul class="kinds">
+           <li>全部明细 <div><img src="../img/choice.png"></div></li>
+           <li>收入明细<div class="hide"><img src="../img/choice.png"></div></li>
+           <li>支出明细<div class="hide"><img src="../img/choice.png"></div></li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="moneyContent">
+            <p class="moneyInfo">新员工入职</p>
+            <p class="moneyDate">2017-03-14</p>    
+        </div>
+    </div>
+  <!--   <script src="../js/zepto.js"></script>--> 
+    <script src="../js/jquery-1.11.3.js"></script>
+    <script src="../js/login.js"></script>
+    <script>
+        $(".kinds").off("touchstart").on("touchstart","li",function(ev){
+            ev.preventDefault();
+           $(this).children().show();
+            $(this).siblings().children().hide();
+        });
+        $('.nav').off("touchstart").on('touchstart',function(ev){
+            var disY = ev.originalEvent.touches[0].pageY - $('.nav').css('top') || 0;
+            // console.log(disY);
+            $(document).on('touchmove',touchMove);
+            $(document).on('touchend',touchEnd);
+            function touchMove(ev){
+                //moving
+                $('.nav').css({top : ev.originalEvent.touches[0].pageY - disY + 'px'});
+                
+            }
+            function touchEnd(){
+                //end
+                $(document).off('touchmove',touchMove);
+                $(document).off('touchend',touchEnd);
+                $('.nav-content').slideUp(500);
+                $('.nav').animate( { height: "1.1rem" }, 500 );
+            }
+            ev.preventDefault();
+        });
+         $('.content').off("touchstart").on('touchstart',function(ev){
+            var disY = ev.originalEvent.touches[0].pageY - $('.content').css('top') || 0;
+            // console.log(disY);
+            $(document).on('touchmove',touchMove);
+            $(document).on('touchend',touchEnd);
+            function touchMove(ev){
+                //moving
+                $('.nav').css({top : ev.originalEvent.touches[0].pageY - disY + 'px'});
+                
+            }
+            function touchEnd(){
+                //end
+                $(document).off('touchmove',touchMove);
+                $(document).off('touchend',touchEnd);
+                $('.nav-content').slideDown(500);
+                $('.nav').animate( { height: "6.1rem" }, 500 );
+            }
+            ev.preventDefault();
+        });
+        
+           
+    </script>
+</body>
+</html>
