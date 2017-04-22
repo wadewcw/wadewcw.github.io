@@ -41,14 +41,14 @@ $accountPsw.one('focus',function () {
 
 $accountPsw.bind('input propertychange',function () {
     if($accountPsw.val().length>5){
-        $img.attr('src','../img/input.png')
+        $img.attr('src','../img/input.png');
     }else if($accountPsw.val().length<7){
         $img.attr('src','../img/noclick.png')
     }
 });
 
-$btn.click(function () {
-    console.log(1)
+$btn.(function () {
+    $img.attr('src','../img/click.png');
 })
 
 
