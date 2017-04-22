@@ -15,26 +15,31 @@ html, body {
     width: 3.97rem;
     height: 0.98rem;
     margin: 0 auto;
-    margin-bottom: 0.6rem; }
+    margin-bottom: 0.6rem;
+    border-bottom: 1px solid #ebebed;
+  }
     .container .account .info_id {
       font-size: 0.24rem;
       color: #adbfc9;
       position: absolute;
-      top: 50%;
+      top: 77%;
       left: 0;
-      z-index: 99;
+      z-index: 9999;
       -display: none;
       margin-top: -0.28rem; }
 
     .container .account .account_txt {
       z-index: 999;
       width: 100%;
-      line-height: 0.58rem;
-      /* height: 0.78rem; */
+      line-height: 0.16rem;
       border: none;
-      border-bottom: 1px solid #ebebed;
-      font-size: 0.22rem;
+      /* height: 0.78rem; */
+      /*border: none;
+      border-bottom: 1px solid #ebebed;*/
+      font-size: 0.21rem;
       color: #667d89;
+      position: absolute;
+      top:50%;
     }
   .container .password {
     position: relative;
@@ -82,7 +87,7 @@ input::-webkit-input-placeholder {
   font-size: 0.24rem;
   color: #adbfc9;
   position: absolute;
-  top: 0;
+  top: 0.3rem;
   left: 0;
   z-index: 99;
   display: none;
