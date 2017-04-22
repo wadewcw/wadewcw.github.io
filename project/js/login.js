@@ -27,14 +27,14 @@ var $btn = $('.login');
 
 $accountTxt.one('focus',function () {
     $infoId.show().animate({
-        top:'0.5px'
+        top:'0.1rem'
     }).fadeOut('fast');
     $titleId.fadeIn(1500);
 });
 $accountPsw.one('focus',function () {
     $infoPsw.show().animate({
-        top:'0.5px'
-    }).fadeOut('fast');
+        top:'0.1rem'
+    }).fadeOut();
     $titlePsw.fadeIn(1500);
 });
 
