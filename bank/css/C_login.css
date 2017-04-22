@@ -52,10 +52,10 @@ a{
       font-size: 0.24rem;
       color: #adbfc9;
       position: absolute;
-      top: 50%;
+      top: 77%;
       left: 0;
       -display: none;
-      z-index: 99;
+      z-index: 9999;
       margin-top: -0.28rem; }
 
     .container .password .account_psw {
