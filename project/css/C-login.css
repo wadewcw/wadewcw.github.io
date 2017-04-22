@@ -1,8 +1,7 @@
 html, body {
   font-size: 100px; }
 
-.container {
-  width: 6.4rem; }
+
   .container .logo {
     width: 100%;
     margin: 1.06rem 0 1.06rem 0; }
@@ -61,7 +60,7 @@ html, body {
       color: #667d89; }
     .container .password .forget {
       display: block;
-      width: 1.08rem;
+      -width: 1.08rem;
       font-size: 0.24rem;
       color: #adbfc9;
       position: absolute;
@@ -90,8 +89,9 @@ input::-webkit-input-placeholder {
 .login {
   width: 100%;
   color: #fff;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   position: relative;
+
 }
 .login_title{
   position: absolute;
@@ -99,11 +99,14 @@ input::-webkit-input-placeholder {
   left:50%;
   font-size:0.26rem;
   margin-left: -0.24rem;
-  top: 0.80rem;
+  top: 0.2rem;
+  z-index: 999;
 }
 .back{
   margin: 0 auto;
-  width: 4.75rem;
+  height: 0.77rem;
 
+  width: 3.97rem;
   display: block;
+  -box-shadow: 5px 5px 10px #D2F2FB;
 }
