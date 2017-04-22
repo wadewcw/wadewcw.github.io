@@ -34,9 +34,6 @@ html, body {
     line-height: 0.24rem;
     height: 0.24rem;
       border: none;
-      /* height: 0.78rem; */
-      /*border: none;
-      border-bottom: 1px solid #ebebed;*/
       font-size: 0.21rem;
       color: #667d89;
       position: absolute;
@@ -60,18 +57,17 @@ html, body {
       margin-top: -0.28rem; }
 
     .container .password .account_psw {
-      width: 100%;
-      z-index: 999;
-      
+    z-index: 999;
+    width: 100%;
     line-height: 0.24rem;
     height: 0.24rem;
-      border: none;
-      font-size: 0.24rem;
-      z-index: 999;
-      color: #667d89;
-      position: absolute;
-      top: 50%;
+    border: none;
+    font-size: 0.21rem;
+    color: #667d89;
+    position: absolute;
+    top: 50%;
     }
+
     .container .password .forget {
       display: block;
       -width: 1.08rem;
