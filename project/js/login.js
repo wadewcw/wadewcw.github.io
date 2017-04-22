@@ -47,7 +47,7 @@ $accountPsw.bind('input propertychange',function () {
     }
 });
 
-$btn.(function () {
+$btn.click(function () {
     $img.attr('src','../img/click.png');
 })
 
