@@ -15,30 +15,40 @@ html, body {
     width: 3.97rem;
     height: 0.98rem;
     margin: 0 auto;
-    margin-bottom: 0.6rem; }
+    margin-bottom: 0.6rem;
+    border-bottom: 1px solid #ebebed;
+  }
     .container .account .info_id {
       font-size: 0.24rem;
       color: #adbfc9;
       position: absolute;
-      top: 50%;
+      top: 77%;
       left: 0;
-      z-index: 99;
+      z-index: 9999;
       -display: none;
       margin-top: -0.28rem; }
+
     .container .account .account_txt {
       z-index: 999;
       width: 100%;
-      line-height: 0.78rem;
-      height: 0.78rem;
+      line-height: 0.16rem;
+      height: 0.16rem;
       border: none;
-      border-bottom: 1px solid #ebebed;
-      font-size: 0.24rem;
-      color: #667d89; }
+      /* height: 0.78rem; */
+      /*border: none;
+      border-bottom: 1px solid #ebebed;*/
+      font-size: 0.21rem;
+      color: #667d89;
+      position: absolute;
+      top:50%;
+    }
   .container .password {
     position: relative;
     width: 3.97rem;
     height: 0.98rem;
-    margin: 0 auto; }
+    margin: 0 auto;
+    border-bottom: 1px solid #ebebed;
+  }
     .container .password .info_psw {
       font-size: 0.24rem;
       color: #adbfc9;
@@ -47,20 +57,23 @@ html, body {
       left: 0;
       -display: none;
       z-index: 99;
-      margin-top: -0.27rem; }
+      margin-top: -0.28rem; }
 
     .container .password .account_psw {
       width: 100%;
       z-index: 999;
-      line-height: 0.78rem;
-      height: 0.78rem;
+      line-height: 0.22rem;
+      height: 0.22rem;
       border: none;
-      border-bottom: 1px solid #ebebed;
       font-size: 0.24rem;
-      color: #667d89; }
+      z-index: 999;
+      color: #667d89;
+      position: absolute;
+      top: 50%;
+    }
     .container .password .forget {
       display: block;
-      width: 1.08rem;
+      -width: 1.08rem;
       font-size: 0.24rem;
       color: #adbfc9;
       position: absolute;
@@ -80,7 +93,7 @@ input::-webkit-input-placeholder {
   font-size: 0.24rem;
   color: #adbfc9;
   position: absolute;
-  top: 0;
+  top: 0.3rem;
   left: 0;
   z-index: 99;
   display: none;
@@ -89,8 +102,9 @@ input::-webkit-input-placeholder {
 .login {
   width: 100%;
   color: #fff;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   position: relative;
+
 }
 .login_title{
   position: absolute;
@@ -98,11 +112,14 @@ input::-webkit-input-placeholder {
   left:50%;
   font-size:0.26rem;
   margin-left: -0.24rem;
-  top: 0.80rem;
+  top: 0.2rem;
+  z-index: 999;
 }
 .back{
   margin: 0 auto;
-  width: 4.75rem;
+  height: 0.77rem;
 
+  width: 3.97rem;
   display: block;
+  -box-shadow: 5px 5px 10px #D2F2FB;
 }
