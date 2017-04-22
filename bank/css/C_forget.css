@@ -13,7 +13,7 @@
     font-size: 0.24rem;
     color: #adbfc9;
     position: absolute;
-    top: 77%;
+    top: 75%;
     left: 0;
     z-index: 9999;
     -display: none;
@@ -58,26 +58,27 @@
     font-size: 0.24rem;
     color: #adbfc9;
     position: absolute;
-    top: 50%;
+    top: 72%;
     left: 0;
-    z-index: 99;
+    z-index: 9999;
     -display: none;
     margin-top: -0.28rem; }
 .container .code .code_txt {
-    z-index: 999;
-    width: 100%;
-    line-height: 0.78rem;
-    height: 0.78rem;
+    z-index: 99;
+    width: 2rem;
+    line-height: 0.24rem;
+    height: 0.24rem;
     border: none;
-    border-bottom: 1px solid #ebebed;
-    font-size: 0.24rem;
+    font-size: 0.21rem;
     color: #667d89;
+    position: absolute;
+    top: 50%;
 }
 .container .code_title{
     font-size: 0.24rem;
     color: #adbfc9;
     position: absolute;
-    top: 0.13rem;
+    top: 0.33rem;
     left: 0;
     z-index: 99;
     display: none;
@@ -95,10 +96,9 @@
 .getcode{
     position: absolute;
     right: 0;
-    top: -0.26rem;
+    top: -0.06rem;
     width: 1.73rem;
     height: 0.72rem;
-    border-bottom: 1px solid #ebebed;
 }
 .code_img{
     width: 1.73rem;
@@ -127,22 +127,26 @@
 }
 
 .login {
-    width: 100%;
-    color: #fff;
-    margin-top: -0.2rem;
-    position: relative;
+  width: 100%;
+  color: #fff;
+  margin-top: 1rem;
+  position: relative;
+
 }
 .login_title{
-    position: absolute;
-    color: #fff;
-    left:50%;
-    font-size:0.26rem;
-    margin-left: -0.24rem;
-    top: 0.80rem;
+  position: absolute;
+  color: #fff;
+  left:50%;
+  font-size:0.26rem;
+  margin-left: -0.24rem;
+  top: 0.2rem;
+  z-index: 999;
 }
 .back{
-    margin: 0 auto;
-    width: 4.75rem;
+  margin: 0 auto;
+  height: 0.77rem;
 
-    display: block;
+  width: 3.97rem;
+  display: block;
+  -box-shadow: 5px 5px 10px #D2F2FB;
 }

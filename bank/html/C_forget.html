@@ -12,13 +12,13 @@
         <div class="phone">
             <span class="phone_title">手机号</span>
             <span class="phone_place">请输入手机号</span>
-            <input type="text" class="phone_txt">
+            <input type="text" class="phone_txt" maxlength="11">
         </div>
         <div class="code">
             <span class="code_title">验证码</span>
             <span class="code_place">请输入验证码</span>
-            <div class="getcode"><img src="../img/code.png" class="code_img"><span class="code_info">获取验证码</span></div>
-            <input type="text" class="code_txt">
+            <input type="text" class="code_txt" maxlength="6">
+            <div class="getcode"><img src="../img/codenot.png" class="code_img"><span class="code_info">获取验证码</span></div>
         </div>
         <div class="password">
             <span class="password_title">密码</span>
@@ -35,5 +35,7 @@
             <img src="../img/noclick.png" class="back">
         </div>
     </div>
+    <script src="../js/jquery-1.11.3.js"></script>
+    <script src="../js/forget.js"></script>
 </body>
 </html>
