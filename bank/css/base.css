@@ -50,19 +50,19 @@ a:focus,*:focus {
     outline:none; 
 }
 
-select{padding:2px;}
-/*解决设置windows窗口背景色后输入框和文本域变色的问题。*/
+/* select{padding:2px;}
+解决设置windows窗口背景色后输入框和文本域变色的问题。
 input[type="text"],
 input[type="password"],
 select{
-    /* background: #fff; */
+    background: #fff;
     outline: none;
     -webkit-tap-highlight-color: transparent;
     -webkit-user-select: none;
-    /*  -moz-user-focus: none; */
-    /*-moz-user-select: none;*/
+    -moz-user-focus: none;
+    -moz-user-select: none;
     -webkit-appearance:none;
-}
+} */
 
 textarea{
     resize: none;
