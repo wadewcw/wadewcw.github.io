@@ -10,7 +10,7 @@ $phone.one('click',function () {
     $phoneTxt.get(0).focus();
     $phonePla.show().animate({
         top:'0.1rem'
-    }).fadeOut( );
+    }).fadeOut();
     $phoneTit.fadeIn(1500);
 });
 
@@ -26,7 +26,7 @@ $code.one('click',function () {
     $codeTxt.get(0).focus();
     $codePla.show().animate({
         top:'0.1rem'
-    }).fadeOut( );
+    }).fadeOut();
     $codeTit.fadeIn(1500);
 });
 //密码
@@ -41,7 +41,7 @@ $password.one('click',function () {
     $passTxt.get(0).focus();
     $passPla.show().animate({
         top:'0.1rem'
-    }).fadeOut( );
+    }).fadeOut();
     $passTit.fadeIn(1500);
 });
 //再次输入密码
@@ -59,7 +59,7 @@ $pswAgain.one('click',function () {
     $pswTxt.get(0).focus();
     $pswPla.show().animate({
         top:'0.1rem'
-    }).fadeOut( );
+    }).fadeOut();
     $pswTit.fadeIn(1500);
 });
 

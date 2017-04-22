@@ -32,7 +32,7 @@ $account.one('click',function () {
     $accountTxt.get(0).focus();
     $infoId.show().animate({
         top:'0.1rem'
-    }).fadeOut( );
+    }).fadeOut();
     $titleId.fadeIn(1500);
 });
 $accountPsw.click(function () {

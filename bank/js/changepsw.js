@@ -14,7 +14,7 @@ $oldPsw.one('click',function () {
     $oldTxt.get(0).focus();
     $oldInfo.show().animate({
         top:'0.1rem'
-    }).fadeOut( );
+    }).fadeOut();
     $oldTit.fadeIn(1500);
 });
 
@@ -30,7 +30,7 @@ $newPsw.one('click',function () {
     $newTxt.get(0).focus();
     $newInfo.show().animate({
         top:'0.1rem'
-    }).fadeOut( );
+    }).fadeOut();
     $newTit.fadeIn(1500);
 });
 
@@ -46,7 +46,7 @@ $newAgain.one('click',function () {
     $againTxt.get(0).focus();
     $againInfo.show().animate({
         top:'0.1rem'
-    }).fadeOut( );
+    }).fadeOut();
     $againTit.fadeIn(1500);
 });
 
