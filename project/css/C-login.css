@@ -25,15 +25,17 @@ html, body {
       z-index: 99;
       -display: none;
       margin-top: -0.28rem; }
+
     .container .account .account_txt {
       z-index: 999;
       width: 100%;
-      line-height: 0.78rem;
-      height: 0.78rem;
+      line-height: 0.58rem;
+      /* height: 0.78rem; */
       border: none;
       border-bottom: 1px solid #ebebed;
-      font-size: 0.24rem;
-      color: #667d89; }
+      font-size: 0.22rem;
+      color: #667d89;
+    }
   .container .password {
     position: relative;
     width: 3.97rem;
