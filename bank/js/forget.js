@@ -11,11 +11,11 @@ $phone.one('click',function () {
     $phonePla.animate({
         top:'0.3rem',
         opacity:'0'
-    },800);
+    },600);
     $phoneTit.animate({
         top:'5%',
         opacity:'1'
-    },800);
+    },600);
 });
 
 //验证码
@@ -32,11 +32,11 @@ $codeLeft.one('click',function () {
     $codePla.animate({
         top:'0.3rem',
         opacity:'0'
-    },800);
+    },600);
     $codeTit.animate({
         top:'-7%',
         opacity:'1'
-    },800);
+    },600);
 });
 //密码
 var $password = $('.password');
@@ -51,11 +51,11 @@ $password.one('click',function () {
     $passPla.animate({
         top:'0.3rem',
         opacity:'0'
-    },800);
+    },600);
     $passTit.animate({
         top:'5%',
         opacity:'1'
-    },800);
+    },600);
 });
 //再次输入密码
 var $pswAgain = $('.psw_again');
@@ -73,11 +73,11 @@ $pswAgain.one('click',function () {
     $pswPla.animate({
         top:'0.3rem',
         opacity:'0'
-    },800);
+    },600);
     $pswTit.animate({
         top:'5%',
         opacity:'1'
-    },800);
+    },600);
 });
 
 $phone.bind('input propertychange',function (){

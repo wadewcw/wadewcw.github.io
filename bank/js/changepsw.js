@@ -15,11 +15,11 @@ $oldPsw.one('click',function () {
     $oldInfo.animate({
         top:'0.3rem',
         opacity:'0'
-    },800);
+    },600);
     $oldTit.animate({
         top:'5%',
         opacity:'1'
-    },800);
+    },600);
 });
 
 //新密码
@@ -35,11 +35,11 @@ $newPsw.one('click',function () {
     $newInfo.animate({
         top:'0.3rem',
         opacity:'0'
-    },800);
+    },600);
     $newTit.animate({
         top:'5%',
         opacity:'1'
-    },800);
+    },600);
 });
 
 //再次输入
@@ -55,11 +55,11 @@ $newAgain.one('click',function () {
     $againInfo.animate({
         top:'0.3rem',
         opacity:'0'
-    },800);
+    },600);
     $againTit.animate({
         top:'5%',
         opacity:'1'
-    },800);
+    },600);
 });
 
 //输入有误
