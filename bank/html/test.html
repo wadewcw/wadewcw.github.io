@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>test</title>
+	<link rel="stylesheet" href="../css/base.css">
+	<style>
+		*{
+			font-size: 0.28rem;
+			color: #666;
+		}
+		.table{
+			width: 200px;
+			height: 200px;
+			border: 1px solid #666;
+			font-size: 24px;
+			margin: 0 auto;
+			overflow-x: hidden;
+    		overflow-y: auto;
+		}
+		.add{
+			color: red
+		}
+	</style>
+	<script type="text/javascript" src="../js/rem.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div contenteditable="true" class="table">
+			
+		</div>
+		<a href="javascript:;">点点点</a>
+	</div>
+	<script src="../js/jquery-1.11.3.js"></script>
+	<script type="text/javascript">
+        (function(){
+        	
+        		$('.table').text('123,345,5667');
+        	var a = $('.table').text().split(',')[2];
+        	var b='<span class="add">'+a+'</span>';
+        	// a=a.toString().replace(b);
+        	/*a.innerhtml()=b;*/
+        	var b=eval('+a+')
+        	console.log(a)
+
+        
+        	
+
+        })()
+			</script>
+</body>
+</html>
