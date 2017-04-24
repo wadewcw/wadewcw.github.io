@@ -8,10 +8,14 @@ $phone.click(function(){
 });
 $phone.one('click',function () {
     $phoneTxt.get(0).focus();
-    $phonePla.show().animate({
-        top:'0.1rem'
-    }).fadeOut();
-    $phoneTit.fadeIn(1500);
+    $phonePla.animate({
+        top:'0.3rem',
+        opacity:'0'
+    },800);
+    $phoneTit.animate({
+        top:'5%',
+        opacity:'1'
+    },800);
 });
 
 //验证码
@@ -25,10 +29,14 @@ $codeLeft.click(function(){
 });
 $codeLeft.one('click',function () {
     $codeTxt.get(0).focus();
-    $codePla.show().animate({
-        top:'0.1rem'
-    }).fadeOut();
-    $codeTit.fadeIn(1500);
+    $codePla.animate({
+        top:'0.3rem',
+        opacity:'0'
+    },800);
+    $codeTit.animate({
+        top:'-7%',
+        opacity:'1'
+    },800);
 });
 //密码
 var $password = $('.password');
@@ -40,10 +48,14 @@ $password.click(function(){
 });
 $password.one('click',function () {
     $passTxt.get(0).focus();
-    $passPla.show().animate({
-        top:'0.1rem'
-    }).fadeOut();
-    $passTit.fadeIn(1500);
+    $passPla.animate({
+        top:'0.3rem',
+        opacity:'0'
+    },800);
+    $passTit.animate({
+        top:'5%',
+        opacity:'1'
+    },800);
 });
 //再次输入密码
 var $pswAgain = $('.psw_again');
@@ -58,10 +70,14 @@ $pswAgain.click(function(){
 });
 $pswAgain.one('click',function () {
     $pswTxt.get(0).focus();
-    $pswPla.show().animate({
-        top:'0.1rem'
-    }).fadeOut();
-    $pswTit.fadeIn(1500);
+    $pswPla.animate({
+        top:'0.3rem',
+        opacity:'0'
+    },800);
+    $pswTit.animate({
+        top:'5%',
+        opacity:'1'
+    },800);
 });
 
 $phone.bind('input propertychange',function (){

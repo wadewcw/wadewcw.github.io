@@ -12,10 +12,14 @@ $oldPsw.click(function(){
 });
 $oldPsw.one('click',function () {
     $oldTxt.get(0).focus();
-    $oldInfo.show().animate({
-        top:'0.1rem'
-    }).fadeOut();
-    $oldTit.fadeIn(1500);
+    $oldInfo.animate({
+        top:'0.3rem',
+        opacity:'0'
+    },800);
+    $oldTit.animate({
+        top:'5%',
+        opacity:'1'
+    },800);
 });
 
 //新密码
@@ -28,10 +32,14 @@ $newPsw.click(function(){
 });
 $newPsw.one('click',function () {
     $newTxt.get(0).focus();
-    $newInfo.show().animate({
-        top:'0.1rem'
-    }).fadeOut();
-    $newTit.fadeIn(1500);
+    $newInfo.animate({
+        top:'0.3rem',
+        opacity:'0'
+    },800);
+    $newTit.animate({
+        top:'5%',
+        opacity:'1'
+    },800);
 });
 
 //再次输入
@@ -44,10 +52,14 @@ $newAgain.click(function(){
 });
 $newAgain.one('click',function () {
     $againTxt.get(0).focus();
-    $againInfo.show().animate({
-        top:'0.1rem'
-    }).fadeOut();
-    $againTit.fadeIn(1500);
+    $againInfo.animate({
+        top:'0.3rem',
+        opacity:'0'
+    },800);
+    $againTit.animate({
+        top:'5%',
+        opacity:'1'
+    },800);
 });
 
 //输入有误
