@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>联币银行</title>
+    <title>我的联币</title>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/cMoney.css">
@@ -16,74 +16,27 @@
             <p class="howtoAchieve">如何获取联币</p>   
         </div>
         <ul class="kinds">
-           <li>全部明细<div><img src="../img/choice.png"></div></li>
+           <li class="changeColor">全部明细<div><img src="../img/choice.png"></div></li>
            <li>收入明细<div class="hide"><img src="../img/choice.png"></div></li>
            <li>支出明细<div class="hide"><img src="../img/choice.png"></div></li>
         </ul>
     </div>
     <div class="content">
         <div class="moneyContent">
-            <p class="moneyInfo">新员工入职</p>
+            <div class="moneyInfo">新员工入职1<p class="fr color-red">+100</p></div>
+            <p class="moneyDate">2017-03-14</p>    
+        </div>
+        <div class="moneyContent hide">
+            <div class="moneyInfo">新员工入职2<p class="fr color-red">+100</p></div>
+            <p class="moneyDate">2017-03-14</p>    
+        </div>
+        <div class="moneyContent hide">
+            <div class="moneyInfo">新员工入职3<p class="fr color-red">+100</p></div>
             <p class="moneyDate">2017-03-14</p>    
         </div>
     </div>
   <!--   <script src="../js/zepto.js"></script>--> 
     <script src="../js/jquery-1.11.3.js"></script>
-    <script>
-    	touchClick($('.kinds li'),function(){
-			$('.kinds li div').addClass('hide');
-			$('.kinds li div').eq($(this).index()).removeClass('hide');
-    	});
-        $(document).on('touchstart',function(ev){
-        	var moveType = '';
-            var disY = ev.originalEvent.touches[0].pageY;
-            // console.log(disY);
-            $(document).on('touchmove',touchMove);
-            $(document).on('touchend',touchEnd);
-            function touchMove(ev){
-            	if(disY-ev.originalEvent.touches[0].pageY > 50){
-            		moveType = 'top';
-            	}
-            	else if(disY-ev.originalEvent.touches[0].pageY < -50){
-            		moveType = 'down';
-            	}
-            }
-            function touchEnd(){
-                //end
-                $(document).off('touchmove',touchMove);
-                $(document).off('touchend',touchEnd);
-                switch(moveType){
-                	case 'top':
-                        $('.nav-content').slideUp(500);
-                		$('.nav').animate( { height: "1.1rem" }, 500 );
-                		break;
-                	case 'down':
-                        $('.nav-content').slideDown(500);
-                		$('.nav').animate( { height: "6.1rem" }, 500 );
-                		break;
-                }
-            }
-            ev.isDefaultPrevented();
-        });
-        function touchClick(obj,fn){
-        	obj.on('touchstart',function(ev){
-        		var _this = this;
-        		var moveCheck = false;
-        		$(document).on('touchmove',touchMove);
-        		$(document).on('touchend',touchEnd);
-        		function touchMove(){
-        			moveCheck = true;
-        		}
-        		function touchEnd(){
-        			if(!moveCheck){
-        				fn && fn.call(_this);
-        			}
-        			$(document).off('touchmove',touchMove);
-        			$(document).off('touchend',touchEnd);
-        		}
-        		ev.isDefaultPrevented();
-        	});
-        } 
-    </script>
+    <script type="text/javascript" src="../js/lincombMoney.js"></script>
 </body>
 </html>
