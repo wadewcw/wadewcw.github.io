@@ -3,8 +3,9 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    font-family: "宋体";
+    font-family: '微软雅黑';
     text-decoration: none;
+    color: #667d89;
 }
 
 .content{
@@ -12,20 +13,19 @@
     height: auto;
 }
 .wap ul{
-    float: left;
-    margin:1rem 0.5rem 0 0.5rem;
+    padding: 0.6rem 0.26rem;
 }
 .wap ul li{
-    margin-bottom: 1rem;
-    float: left;
+    word-wrap: break-word;
     overflow: hidden;
+    font-size: 0.26rem;
 }
 .wap ul li span{
-    font-size: 0.7rem;
-    float: left;
+    font-size: 0.26rem;
     overflow: hidden;
     word-break: normal;
     display: block;
     white-space: pre-wrap;
     word-wrap: break-word;
+    line-height: 0.6rem;
 }

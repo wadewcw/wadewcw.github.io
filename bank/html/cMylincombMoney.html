@@ -16,7 +16,7 @@
             <p class="howtoAchieve">如何获取联币</p>   
         </div>
         <ul class="kinds">
-           <li>全部明细 <div><img src="../img/choice.png"></div></li>
+           <li>全部明细<div><img src="../img/choice.png"></div></li>
            <li>收入明细<div class="hide"><img src="../img/choice.png"></div></li>
            <li>支出明细<div class="hide"><img src="../img/choice.png"></div></li>
         </ul>
@@ -30,51 +30,60 @@
   <!--   <script src="../js/zepto.js"></script>--> 
     <script src="../js/jquery-1.11.3.js"></script>
     <script>
-        $(".kinds").off("touchstart").on("touchstart","li",function(ev){
-            ev.preventDefault();
-           $(this).children().show();
-            $(this).siblings().children().hide();
-        });
-        $('.nav').off("touchstart").on('touchstart',function(ev){
-            var disY = ev.originalEvent.touches[0].pageY - $('.nav').css('top') || 0;
+    	touchClick($('.kinds li'),function(){
+			$('.kinds li div').addClass('hide');
+			$('.kinds li div').eq($(this).index()).removeClass('hide');
+    	});
+        $(document).on('touchstart',function(ev){
+        	var moveType = '';
+            var disY = ev.originalEvent.touches[0].pageY;
             // console.log(disY);
             $(document).on('touchmove',touchMove);
             $(document).on('touchend',touchEnd);
             function touchMove(ev){
-                //moving
-                $('.nav').css({top : ev.originalEvent.touches[0].pageY - disY + 'px'});
-                
+            	if(disY-ev.originalEvent.touches[0].pageY > 50){
+            		moveType = 'top';
+            	}
+            	else if(disY-ev.originalEvent.touches[0].pageY < -50){
+            		moveType = 'down';
+            	}
             }
             function touchEnd(){
                 //end
                 $(document).off('touchmove',touchMove);
                 $(document).off('touchend',touchEnd);
-                $('.nav-content').slideUp(500);
-                $('.nav').animate( { height: "1.1rem" }, 500 );
+                switch(moveType){
+                	case 'top':
+                        $('.nav-content').slideUp(500);
+                		$('.nav').animate( { height: "1.1rem" }, 500 );
+                		break;
+                	case 'down':
+                        $('.nav-content').slideDown(500);
+                		$('.nav').animate( { height: "6.1rem" }, 500 );
+                		break;
+                }
             }
-            ev.preventDefault();
+            ev.isDefaultPrevented();
         });
-         $('.content').off("touchstart").on('touchstart',function(ev){
-            var disY = ev.originalEvent.touches[0].pageY - $('.content').css('top') || 0;
-            // console.log(disY);
-            $(document).on('touchmove',touchMove);
-            $(document).on('touchend',touchEnd);
-            function touchMove(ev){
-                //moving
-                $('.nav').css({top : ev.originalEvent.touches[0].pageY - disY + 'px'});
-                
-            }
-            function touchEnd(){
-                //end
-                $(document).off('touchmove',touchMove);
-                $(document).off('touchend',touchEnd);
-                $('.nav-content').slideDown(500);
-                $('.nav').animate( { height: "6.1rem" }, 500 );
-            }
-            ev.preventDefault();
-        });
-        
-           
+        function touchClick(obj,fn){
+        	obj.on('touchstart',function(ev){
+        		var _this = this;
+        		var moveCheck = false;
+        		$(document).on('touchmove',touchMove);
+        		$(document).on('touchend',touchEnd);
+        		function touchMove(){
+        			moveCheck = true;
+        		}
+        		function touchEnd(){
+        			if(!moveCheck){
+        				fn && fn.call(_this);
+        			}
+        			$(document).off('touchmove',touchMove);
+        			$(document).off('touchend',touchEnd);
+        		}
+        		ev.isDefaultPrevented();
+        	});
+        } 
     </script>
 </body>
 </html>
