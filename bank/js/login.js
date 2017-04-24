@@ -34,7 +34,7 @@ $account.one('click',function () {
         top:'0.3rem',
         opacity:'0'
     },800);
-    $titleId.fadeIn(1500);
+    $titleId.fadeIn(1800);
 });
 $password.click(function () {
     $accountPsw.get(0).focus();
@@ -44,7 +44,7 @@ $password.one('click',function () {
         top:'0.3rem',
         opacity:'0'
     },800).fadeOut();
-    $titlePsw.fadeIn(1500);
+    $titlePsw.fadeIn(1800);
 });
 
 
