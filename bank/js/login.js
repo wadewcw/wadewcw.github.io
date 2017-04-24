@@ -33,11 +33,11 @@ $account.one('click',function () {
     $infoId.animate({
         top:'0.3rem',
         opacity:'0'
-    },800);
+    },600);
     $titleId.animate({
         top:'5%',
         opacity:'1'
-    },800);
+    },600);
 });
 $password.click(function () {
     $accountPsw.get(0).focus();
@@ -46,11 +46,11 @@ $password.one('click',function () {
     $infoPsw.animate({
         top:'0.3rem',
         opacity:'0'
-    },800);
+    },600);
     $titlePsw.animate({
         top:'5%',
         opacity:'1'
-    },800);
+    },600);
 });
 
 
