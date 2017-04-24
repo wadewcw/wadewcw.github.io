@@ -25,7 +25,8 @@
 }
 .howtoAchieve{
 	padding-top: 0.55rem;
-	width: 1.44rem;
+	width: 100%;
+	text-align: center;
 	margin:0 auto;
     font-size: 0.24rem;
     color: #ffffff;
