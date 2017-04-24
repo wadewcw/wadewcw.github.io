@@ -33,8 +33,8 @@ $account.one('click',function () {
     $infoId.show().animate({
         top:'0.3rem',
         opacity:'0'
-    },1000);
-    $titleId.fadeIn('slow');
+    },800);
+    $titleId.fadeIn(1500);
 });
 $password.click(function () {
     $accountPsw.get(0).focus();
@@ -43,8 +43,8 @@ $password.one('click',function () {
     $infoPsw.show().animate({
         top:'0.3rem',
         opacity:'0'
-    },1000).fadeOut();
-    $titlePsw.fadeIn('slow');
+    },800).fadeOut();
+    $titlePsw.fadeIn(1500);
 });
 
 
