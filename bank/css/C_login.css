@@ -24,7 +24,7 @@ a{
     width: 3.97rem;
     height: 0.98rem;
     margin: 0 auto;
-    margin-bottom: 0.6rem;
+    margin-bottom: 0.5rem;
     border-bottom: 1px solid #ebebed;
   }
     .container .account .info_id {
@@ -47,6 +47,8 @@ a{
       color: #667d89;
       position: absolute;
       top:50%;
+      -webkit-appearance:none;
+      /* -webkit-tap-highlight-color:rgba(255,0,0,0); */
     }
   .container .password {
     position: relative;

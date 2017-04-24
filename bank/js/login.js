@@ -31,18 +31,20 @@ $account.click(function () {
 $account.one('click',function () {
     $accountTxt.get(0).focus();
     $infoId.show().animate({
-        top:'0.3rem'
-    }).fadeOut('slow');
-    $titleId.fadeIn(1500);
+        top:'0.3rem',
+        opacity:'0'
+    },1000);
+    $titleId.fadeIn('slow');
 });
 $password.click(function () {
     $accountPsw.get(0).focus();
 });
 $password.one('click',function () {
     $infoPsw.show().animate({
-        top:'0.3rem'
-    }).fadeOut('slow');
-    $titlePsw.fadeIn(1500);
+        top:'0.3rem',
+        opacity:'0'
+    },1000).fadeOut();
+    $titlePsw.fadeIn('slow');
 });
 
 
