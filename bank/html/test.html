@@ -22,32 +22,43 @@
 		.add{
 			color: red
 		}
+		#aaa{
+			width: 300px;height: 300px;border: 1px solid #666;
+		}
+		.apple{
+			color: red;
+		}
 	</style>
 	<script type="text/javascript" src="../js/rem.js"></script>
 </head>
 <body>
-	<div class="container">
+	<!-- <div class="container">
 		<div contenteditable="true" class="table">
 			
 		</div>
+		<textarea id="aaa"></textarea>
 		<a href="javascript:;">点点点</a>
-	</div>
+	</div> -->
+	<div contenteditable="true" id="aa" style="width:300px;height:300px;border:1px solid #000">123,234,456,345</div>
+	<a href="javascript:;">点点点</a>
 	<script src="../js/jquery-1.11.3.js"></script>
 	<script type="text/javascript">
         (function(){
+        	$('a').click(function(){
+        		var text = $('#aa').html();
+        	console.log(text);
+        	var error = '345';
+        	var arr = text.split(',');
+        	console.log(arr);
+        	for(var i=0;i<arr.length;i++){
+        		if(arr[i] == error){
+        			arr[i] = '<span style="color:#f00">'+error+'</span>';
+        		}
+        	}
+        	document.getElementById('aa').innerHTML = arr.join(',');
+        	})
         	
-        		$('.table').text('123,345,5667');
-        	var a = $('.table').text().split(',')[2];
-        	var b='<span class="add">'+a+'</span>';
-        	// a=a.toString().replace(b);
-        	/*a.innerhtml()=b;*/
-        	var b=eval('+a+')
-        	console.log(a)
-
-        
-        	
-
-        })()
-			</script>
+        })();
+		</script>
 </body>
 </html>

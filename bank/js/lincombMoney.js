@@ -39,7 +39,7 @@ $(document).on('touchstart',function(ev){
         		break;
         }
     }
-    ev.isDefaultPrevented();
+    ev.originalEvent.preventDefault();
 });
 function touchClick(obj,fn){   
 	obj.on('touchstart',function(ev){
@@ -57,6 +57,7 @@ function touchClick(obj,fn){
 			$(document).off('touchmove',touchMove);
 			$(document).off('touchend',touchEnd);
 		}
+        ev.originalEvent.stopPropagation();
 		ev.isDefaultPrevented();
 	});
 } 
